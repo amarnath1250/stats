@@ -1,0 +1,210 @@
+.page-header {
+    background: #154c88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.page-title {
+    color: #ffffff;
+}
+.download-postman {
+    background: #4ab4e8;
+    border-color: #2f99dc;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+.thhead {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.thhead-label {
+    flex: 3;
+    border-right: 1px solid #ccc;
+    padding: 0.5em;
+    color: #154c88;
+    font-size: 20px;
+}
+.thhead-value {
+    flex: 1;
+    text-align: center;
+    padding: 0.5em;
+    color: #7dd343;
+    font-size: 20px;
+    font-weight: 600;
+}
+.trhead {
+    display: flex;
+    font-size: 18px;
+    padding: 0.5em 0;
+    border-bottom: 0.05rem solid #dadee4;
+}
+.trhead-label,
+.trhead-value {
+    flex: 1;
+    text-align: center;
+}
+.tr-wrapper {
+    height: calc(100% - 84px);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.tr {
+    display: flex;
+    justify-content: space-around;
+    padding: 11px 0;
+    border-bottom: 0.05rem solid #dadee4;
+    height: 100%;
+    align-items: center;
+}
+.tr:nth-child(2n + 1) {
+    background: #f7f8f9;
+}
+.td {
+    flex: 1;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 345px;
+    grid-gap: 15px;
+    margin: 10px;
+    transition: all 1s linear;
+}
+main.expanded {
+    grid-template-columns: 1fr;
+    grid-template-rows: calc(100vh - 90px);
+}
+.board-header {
+    background: #144c88;
+    padding: 1em 1.5em;
+    border-top: 4px solid #7dd343;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.board-wrapper {
+    box-shadow: 3px 3px 5px 0 rgb(0 0 0 / 25%);
+    height: 100%;
+}
+.board-content {
+    display: flex;
+    height: calc(100% - 66px);
+}
+.data-stats {
+    flex: 1;
+    background: #20649b;
+    color: #ffffff;
+    position: relative;
+}
+.data-info {
+    flex: 2;
+    height: 100%;
+}
+
+.stats-heading {
+    padding: 1em 1.5em;
+}
+.download-label {
+    padding: 0 1.5em;
+}
+.view-api {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: #49b4e8;
+    box-sizing: border-box;
+}
+.view-api-title {
+    background: #49b4e8;
+    flex: 3;
+    padding: 20px;
+}
+.fa-arrow-right {
+    background: #3099dd;
+    flex: 1;
+    padding: 20px;
+}
+
+.sort-option {
+    background: transparent url(http://13.232.99.42/img/caret-down.svg)
+        no-repeat right 0.35rem center/.4rem 0.5rem;
+    padding: 0.5em 1.2rem;
+    color: #fff;
+    width: 130px;
+    border: 1px solid #19579a;
+    appearance: none;
+    margin-right: 1em;
+}
+.header-functionality {
+    display: flex;
+    align-items: center;
+}
+.fa {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.meter {
+    height: 5px;
+    background: #0f3d77;
+    margin: 0.4em 1.5em 1.2em 1.5em;
+    border-radius: 5px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: #45b0e6;
+    -webkit-animation: progressBar 1s linear;
+    -webkit-animation-fill-mode: both;
+    -moz-animation: progressBar 1s linear;
+    -moz-animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes progressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
